@@ -1,9 +1,12 @@
-import React, {useEffect, useRef, useState} from 'react';
+'use client';
+
+import Image from 'next/image';
+import {useEffect, useRef, useState} from 'react';
 import {Check, Copy} from 'lucide-react';
 
 const CREATE_COMMAND = 'npx create-next-app@latest';
 
-export const HeroSection: React.FC = () => {
+export function HeroSection() {
   const [copied, setCopied] = useState(false);
   const timeoutRef = useRef<number | null>(null);
 
@@ -30,7 +33,7 @@ export const HeroSection: React.FC = () => {
         document.body.removeChild(textarea);
       }
     } catch {
-      // Clipboard access denied; still show brief feedback or fail silently
+      // Clipboard access denied; still show brief feedback
     }
 
     setCopied(true);
@@ -47,9 +50,12 @@ export const HeroSection: React.FC = () => {
       <div className="w-full max-w-[920px] flex flex-col items-center text-center">
         {/* Giant Outlined NEXT Backdrop Graphic */}
         <div className="w-full max-w-[850px] select-none pointer-events-none">
-          <img
+          <Image
             src="/assets/next-hero-outline.svg"
             alt="NEXT"
+            width={940}
+            height={260}
+            priority
             className="w-full h-auto block"
             draggable={false}
           />
@@ -95,4 +101,4 @@ export const HeroSection: React.FC = () => {
       </div>
     </main>
   );
-};
+}

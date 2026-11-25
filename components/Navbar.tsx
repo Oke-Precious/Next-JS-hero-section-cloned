@@ -1,13 +1,16 @@
-import React from 'react';
+import Image from 'next/image';
 
-export const Navbar: React.FC = () => {
+export function Navbar() {
   return (
     <header className="w-full px-6 py-4 flex items-center justify-between">
       {/* Left Brand Lockup: Vercel Triangle / NEXT.JS */}
       <div className="flex items-center gap-3.5 shrink-0">
-        <img
+        <Image
           src="/assets/vercel-logo.svg"
           alt="Vercel"
+          width={24}
+          height={21}
+          priority
           className="h-[18px] w-auto block select-none"
           draggable={false}
         />
@@ -17,9 +20,12 @@ export const Navbar: React.FC = () => {
           className="h-5 w-[1px] bg-neutral-700 rotate-[22deg] block"
         />
 
-        <img
+        <Image
           src="/assets/nextjs-logo.svg"
           alt="Next.js"
+          width={90}
+          height={18}
+          priority
           className="h-[16px] w-auto block select-none translate-y-[1px]"
           draggable={false}
         />
@@ -65,4 +71,4 @@ export const Navbar: React.FC = () => {
       </div>
     </header>
   );
-};
+}
