@@ -1,0 +1,6 @@
+{
+  "name": "Next.js Hero Clone",
+  "description": "A pixel-accurate TypeScript clone of the Next.js hero section and compact header.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

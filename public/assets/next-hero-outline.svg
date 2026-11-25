@@ -1,0 +1,43 @@
+<svg width="940" height="260" viewBox="0 0 940 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="next-blue-fade" x1="0" y1="14" x2="0" y2="246" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B6CFF" stop-opacity="1" />
+      <stop offset="32%" stop-color="#2952E3" stop-opacity="0.92" />
+      <stop offset="62%" stop-color="#17328A" stop-opacity="0.58" />
+      <stop offset="86%" stop-color="#0B1742" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#050A1F" stop-opacity="0.03" />
+    </linearGradient>
+
+    <filter id="next-blue-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3.2" result="blur" />
+    </filter>
+  </defs>
+
+  <!-- Soft outer glow layer -->
+  <g stroke="url(#next-blue-fade)" stroke-width="3.2" stroke-linejoin="miter" filter="url(#next-blue-glow)" opacity="0.55">
+    <path d="M 24 14 H 64 L 180 194 V 14 H 214 V 246 H 174 L 58 66 V 246 H 24 Z" />
+    <path d="M 266 14 H 450 V 48 H 300 V 212 H 450 V 246 H 266 Z" />
+    <path d="M 308 113 H 434 V 147 H 308 Z" />
+    <path d="M 498 14 H 539 L 692 246 H 651 Z" />
+    <path d="M 651 14 H 692 L 620.3 122.7 L 600 91.7 Z" />
+    <path d="M 539 246 H 498 L 569.7 137.3 L 590 168.3 Z" />
+    <path d="M 734 14 H 916 V 48 H 734 Z" />
+    <path d="M 808 56 H 842 V 246 H 808 Z" />
+  </g>
+
+  <!-- Crisp foreground outline layer -->
+  <g stroke="url(#next-blue-fade)" stroke-width="1.5" stroke-linejoin="miter">
+    <!-- N -->
+    <path d="M 24 14 H 64 L 180 194 V 14 H 214 V 246 H 174 L 58 66 V 246 H 24 Z" />
+    <!-- E -->
+    <path d="M 266 14 H 450 V 48 H 300 V 212 H 450 V 246 H 266 Z" />
+    <path d="M 308 113 H 434 V 147 H 308 Z" />
+    <!-- X -->
+    <path d="M 498 14 H 539 L 692 246 H 651 Z" />
+    <path d="M 651 14 H 692 L 620.3 122.7 L 600 91.7 Z" />
+    <path d="M 539 246 H 498 L 569.7 137.3 L 590 168.3 Z" />
+    <!-- T -->
+    <path d="M 734 14 H 916 V 48 H 734 Z" />
+    <path d="M 808 56 H 842 V 246 H 808 Z" />
+  </g>
+</svg>
